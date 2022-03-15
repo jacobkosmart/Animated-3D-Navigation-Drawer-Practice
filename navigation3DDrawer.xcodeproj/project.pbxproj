@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81D66B9D27E0353600EFBADC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D66B9C27E0353600EFBADC /* Home.swift */; };
+		81DAAD8A27E01C0800045795 /* CustomAligment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DAAD8927E01C0800045795 /* CustomAligment.swift */; };
+		81DAAD8C27E0270B00045795 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DAAD8B27E0270B00045795 /* CustomTabView.swift */; };
 		81E1C5E227DCA99900AE43AE /* navigation3DDrawerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1C5E127DCA99900AE43AE /* navigation3DDrawerApp.swift */; };
 		81E1C5E427DCA99900AE43AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1C5E327DCA99900AE43AE /* ContentView.swift */; };
 		81E1C5E627DCA99A00AE43AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E1C5E527DCA99A00AE43AE /* Assets.xcassets */; };
 		81E1C5E927DCA99A00AE43AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E1C5E827DCA99A00AE43AE /* Preview Assets.xcassets */; };
+		81E1C5F227DCABF300AE43AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1C5F127DCABF300AE43AE /* MainView.swift */; };
+		81E1C5F627DCAD0C00AE43AE /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1C5F527DCAD0C00AE43AE /* SideMenu.swift */; };
+		81E1C5F927DCAE5F00AE43AE /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1C5F827DCAE5F00AE43AE /* NavigationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81D66B9C27E0353600EFBADC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		81DAAD8927E01C0800045795 /* CustomAligment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAligment.swift; sourceTree = "<group>"; };
+		81DAAD8B27E0270B00045795 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		81E1C5DE27DCA99900AE43AE /* navigation3DDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigation3DDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E1C5E127DCA99900AE43AE /* navigation3DDrawerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigation3DDrawerApp.swift; sourceTree = "<group>"; };
 		81E1C5E327DCA99900AE43AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81E1C5E527DCA99A00AE43AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E1C5E827DCA99A00AE43AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81E1C5F127DCABF300AE43AE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		81E1C5F527DCAD0C00AE43AE /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		81E1C5F827DCAE5F00AE43AE /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81D66B9B27E0352A00EFBADC /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				81D66B9C27E0353600EFBADC /* Home.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		81E1C5D527DCA99900AE43AE = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +71,9 @@
 		81E1C5E027DCA99900AE43AE /* navigation3DDrawer */ = {
 			isa = PBXGroup;
 			children = (
-				81E1C5E127DCA99900AE43AE /* navigation3DDrawerApp.swift */,
-				81E1C5E327DCA99900AE43AE /* ContentView.swift */,
+				81E1C5EF27DCABCF00AE43AE /* App */,
+				81E1C5F727DCAE4200AE43AE /* ViewModel */,
+				81E1C5F027DCABD800AE43AE /* View */,
 				81E1C5E527DCA99A00AE43AE /* Assets.xcassets */,
 				81E1C5E727DCA99A00AE43AE /* Preview Content */,
 			);
@@ -65,6 +86,35 @@
 				81E1C5E827DCA99A00AE43AE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81E1C5EF27DCABCF00AE43AE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				81E1C5E127DCA99900AE43AE /* navigation3DDrawerApp.swift */,
+				81E1C5E327DCA99900AE43AE /* ContentView.swift */,
+				81DAAD8927E01C0800045795 /* CustomAligment.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		81E1C5F027DCABD800AE43AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81D66B9B27E0352A00EFBADC /* Tabs */,
+				81E1C5F127DCABF300AE43AE /* MainView.swift */,
+				81E1C5F527DCAD0C00AE43AE /* SideMenu.swift */,
+				81DAAD8B27E0270B00045795 /* CustomTabView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81E1C5F727DCAE4200AE43AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				81E1C5F827DCAE5F00AE43AE /* NavigationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E1C5F927DCAE5F00AE43AE /* NavigationViewModel.swift in Sources */,
+				81DAAD8A27E01C0800045795 /* CustomAligment.swift in Sources */,
+				81DAAD8C27E0270B00045795 /* CustomTabView.swift in Sources */,
 				81E1C5E427DCA99900AE43AE /* ContentView.swift in Sources */,
+				81E1C5F627DCAD0C00AE43AE /* SideMenu.swift in Sources */,
+				81E1C5F227DCABF300AE43AE /* MainView.swift in Sources */,
+				81D66B9D27E0353600EFBADC /* Home.swift in Sources */,
 				81E1C5E227DCA99900AE43AE /* navigation3DDrawerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

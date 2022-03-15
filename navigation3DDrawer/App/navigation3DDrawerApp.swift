@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct navigation3DDrawerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	
+	@StateObject var vm: NavigationViewModel = NavigationViewModel()
+	
+	var body: some Scene {
+		WindowGroup {
+			ContentView()
+				.environmentObject(vm)
+		}
+	}
 }
